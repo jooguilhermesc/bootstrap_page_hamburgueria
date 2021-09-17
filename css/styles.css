@@ -4,7 +4,7 @@ body{
 
 .nm-hamburgueria{
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: white;
     font-weight: 700;
 }
@@ -22,6 +22,8 @@ body{
     text-align: center;
     color: #dc3545;
     font-weight: 500;
+    font-size: 2.75em;
+    margin-bottom: 3%;
 }
 
 .tlt-sanduiche{
@@ -31,8 +33,10 @@ body{
     text-align: center;
     color: white;
     background-color: #dc3545;
+    padding: 0.5%;
     border-radius: 5px;
-    height: 1.6em;
+    height: 2em;
+    width: 12em;
 }
 
 .fa{
@@ -54,4 +58,28 @@ body{
 
 #apr-hamburgueria .hero{
     height: 70vh;
+}
+
+.card-sanduiche{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30rem;
+    background-color: whitesmoke;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.img-sanduiche{
+    width: 25rem;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+.card-sanduiche .img-sanduiche{
+    border-radius: 10px;
 }
