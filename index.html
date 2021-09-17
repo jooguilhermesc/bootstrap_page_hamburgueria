@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
         <div class="container">
             <a class="navbar-brand text-white" href="#apr-hamburgueria">Hamburgão do Jão</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvg-menu">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div id="nvg-menu" class="collapse navbar-collapse">
+        <div id="nvg-menu" class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#apr-hamburgueria" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#cardapio" class="nav-link">Cardápio</a></li>
@@ -28,11 +28,14 @@
         </div>
         </div>
     </nav>
-    <main id="apr-hamburgueria" class="d-flex flex-column justify-content-center p-3 container">
+    <main id="apr-hamburgueria" class="d-flex flex-column justify-content-center p-3 hero">
+        <div class="container">
         <h3 class="nm-hamburgueria">Hamburgão do Jão</h3>
         <p class="dsc-hamburgueria">A nossa hamburgueria conta com receitas que passaram de geração em geração, preservando tradições e o carinho da cozinha de quem faz comida por amor. Nossos sanduíches são feitos com ingredientes frescos e selecionados, para proporcionar uma experiência inesquecível!</p>
-        <a class="btn btn-danger mb-1" href="#cardapio">Peça já o seu!</a>
-        <img class="img-fluid rounded" src="./images/banner_hamburgueria.jpg" alt="Imagem de um hambúrguer">
+        <div class="d-flex justify-content-center mt-3">
+            <a class="btn btn-danger mb-1 w-50" href="#cardapio">Peça já o seu!</a>
+        </div>
+        </div>
     </main>
     <section id="cardapio" class="d-flex flex-column justify-content-center p-3 container">
         <h3 class="tlt-cardapio">Conheça nosso cardápio!</h3>
