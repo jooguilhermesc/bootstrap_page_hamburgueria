@@ -1,3 +1,5 @@
-# ESTUDOS---LET-S-CODE
+# Hamburgão do Jão
 
-Acessar o site para teste: https://hamburgaodojao-ce9i8rsch-jooguilhermesc.vercel.app/
+A presente página foi desenvolvida utilizando o framework bootstrap para a estilização dos componentes e simula uma página simples de hamburgueria. 
+
+Para experimentar a utilização da página acesse o seguinte site: https://hamburgaodojao.vercel.app/
