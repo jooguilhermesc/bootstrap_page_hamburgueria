@@ -23,7 +23,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#apr-hamburgueria" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#cardapio" class="nav-link">Cardápio</a></li>
-                <li class="nav-item"><a href="#apr-hamburgueria" class="nav-link">Pedido</a></li>
+                <li class="nav-item"><a href="#form-pedido" class="nav-link">Pedido</a></li>
                 <li class="nav-item"><a href="#contatos" class="nav-link">Contatos</a></li>
             </ul>
         </div>
@@ -41,20 +41,47 @@
     </main>
 
     <section id="cardapio" class="d-flex flex-column justify-content-center p-3 container">
-        <h3 class="tlt-cardapio">Conheça nosso cardápio!</h3>
+        <h3 class="tlt-cardapio d-flex justify-content-around">Conheça nosso cardápio!</h3>
         <div class="d-flex flex-column flex-xl-row justify-content-between">
             <div class="card-sanduiche">
                 <h5 class="tlt-sanduiche">Abraço de Mainha</h5>
                 <img class="img-sanduiche" src="./images/abr_de_mainha.jpg" alt="Imagem do sanduíche abraço de mainha. Pão brioche com gergelim, alface, tomate, dois blends de carne com fatias de queijo cheddar e picles">
                 <p>Pão brioche com gergelim, alface, tomate, dois blends de 60 g de músculo bovino com bacon, fatias de queijo cheddar e picles - <strong>R$27.99</strong></p>
-                <button type="button" class="btn btn-danger w-50">Pedir um</button>
+                <a class="btn btn-danger mb-1 w-50" href="#form-pedido">Pedir um</a>
             </div>
             <div class="card-sanduiche">
                 <h5 class="tlt-sanduiche">Carinho de Vó</h5>
                 <img class="img-sanduiche" src="./images/car_de_vó.jpg" alt="Imagem do sanduíche abraço de vó. Pão brioche com gergelim, salada de picles com cebola roxa caramelizada e molho barbecue, com um blend de costela bovina de 180g com cheddar e maionese caseira com couve refogado">
                 <p>Pão brioche com gergelim, salada de picles com cebola roxa caramelizada e molho barbecue, com um blend de costela bovina de 180g com cheddar e maionese caseira com couve refogado - <strong>R$30.99</strong></p>
-                <button type="button" class="btn btn-danger w-50">Pedir um</button>
+                <a class="btn btn-danger mb-1 w-50" href="#form-pedido">Pedir um</a>
             </div>
+        </div>
+    </section>
+
+    <section id="form-pedido">
+        <div class="d-flex flex-column pedidos container my-5">
+            <h5 class="d-flex">Faça aqui seu pedido</h5>
+            <form class="d-flex flex-column mb-3 w-75" action="">
+                <label for="abr-mainha">Abraço de mainha</label>
+                <select name="abr-mainha" id="abr-mainha">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+        
+                <label for="car-de-vo">Carinho de Vó</label>
+                <select name="car-de-vo" id="car-de-vo">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                
+                <button class="btn btn-danger my-2">Enviar Pedido</button>
+            </form>
         </div>
     </section>
     
